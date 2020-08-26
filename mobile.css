@@ -18,15 +18,13 @@ body{
 
     width: 100%;
     line-height: 1;
-    font-family: "AvenirLTPro-Heavy", 'sdg-m', sans-serif;
+    font-family: "AvenirLTPro-Heavy",'sdg-m',sans-serif;
     display: block;
     font-size: 13pt;
     position: relative;
     line-height: 1;
     overflow: auto;
     letter-spacing: -0.015em;
-    word-break: keep-all;
-    text-rendering: optimizeLegibility;
     
 }
 
@@ -44,21 +42,11 @@ header{
     padding-left: 40px;
     padding-right: 40px;
 }
+
+
 header div{
     text-align: center;
 }
-#head h1{
-    font-size: 18pt;
-    line-height: 1.4;
-    color: #fff;
-}
-#head h2{
-    font-size: 13pt;
-    margin-top: 5px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-}
-
 
 #imglogo{
     width: 110px;
@@ -70,15 +58,6 @@ header div{
 }
 .container{
     margin-top: 60px;
-}
-.container h4{
-   
-        font-size: 14pt;
-        color: #374553;
-        line-height: 1.5;
-        letter-spacing: -0.025em;
-        margin-bottom: 4px;
-    
 }
 .container #section{
     padding: 0 22px;
@@ -240,6 +219,14 @@ div#coupon{
     display: none;
 }
 
+section.section2 ul{
+    width: 100%;
+    max-width: 800px;
+    display: none;
+    background-color: #00B8FF;
+    height: 200px;
+    margin: 0 auto;  
+}
 section.section2{
     display: block;   
     overflow: hidden;
@@ -247,23 +234,6 @@ section.section2{
     margin: 120px 0 0;
     min-height: 0;
 }
-section.section2 ul{
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden;
-    display: none;
-    margin: 0 auto;  
-}
-section.section2 ul li{
-    width: 100%;
-    float: left;
-}
-
-@media (max-width: 768px)
-section.section2 ul{
-
-}
-
 
 
   
@@ -320,8 +290,6 @@ footer #ct{
     float: left;
     font-size: 10pt;
     line-height: 1.7;
-    
-    margin-left: 20px;
     color: #646F7C;
 
 }
@@ -329,6 +297,8 @@ footer #ct2{
     font-size: 10pt;
     line-height: 1.7;
     color: #646F7C;
+    
+    widows: 50%;
 }
 
 
