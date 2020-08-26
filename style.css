@@ -144,14 +144,14 @@ footer ul{list-style: none;}
 footer{
   overflow: auto;
   background-color: #28323C;
-  width: 100%; padding: 40px 18px 18px;
-  position: relative;
-  box-sizing: border-box; padding-bottom: 72px;
+  width: 100%; padding: 40px 0px 0px;
+  position: absolute;
+  box-sizing: border-box; padding-bottom: 74px;
   }
 
 /* sns */
 
-#sns {width: 100%; margin-bottom: 16px; overflow: auto;}
+#sns {width: 100%; margin-bottom: 16px; overflow: auto; }
 
 #sns li{float: left; margin-right: 12px; width: 30px; }
 
@@ -180,9 +180,9 @@ footer ul#info1{position: static; width: 50%; float: left;}
 
 footer ul#info1 li{font-size: 10pt; line-height: 1.7; color: #646f7c;}
 
-footer ul#info2{float: left; width: 50%;}
+footer ul#info2{float: left; width: 50%; }
 
-footer #info2 p{ line-height: 1; font-size: 10pt; color: #646f7c; line-height: 1.7;}
+footer #info2 p{ line-height: 1; font-size: 10pt; color: #646f7c; line-height: 1.0; }
 
 footer #info2 p a{color: #C5C8CE; text-decoration-line: underline;}
 
@@ -349,6 +349,7 @@ i{color: #00469D; font-size: 20px;}
 /* 모바일전용 */
 @media all and (min-width: 768px){
 	.section  li{display: none;}
+	
 }    
 
 
@@ -467,11 +468,11 @@ i{color: #00469D; font-size: 20px;}
 footer ul{list-style: none;}
 
 footer{
-  overflow: auto ;
+  overflow: auto;
   background-color: #28323C;
-  width: 100%; height: 80%; padding: 40px 18px 18px;
+  width: 100%; height: 80%; padding: 40px 0px 0px;
   position: relative;
-  box-sizing: border-box; padding-bottom: 72px;
+  box-sizing: border-box; padding-bottom: 75px;
 }
 
 
@@ -480,12 +481,17 @@ footer{
 #sns li{float: left; margin-right: 12px; width: 30px; }
 
 #sns li a{ display: block;}
-footer ul#customer li a{font-size: 10pt; color: #C5C8CE; float: left; border-width: 2;}
+footer ul#customer li a{font-size: 10pt; color: #C5C8CE; float: left; letter-spacing: 1;}
 
 
+footer ul#info1{ font-size: 5pt; position: static;  width: 100%; float: left;}
 
 
-	
+footer #info2 p{size: 5pt; float: lefts; line-height: 1; margin: 5%; font-size: 9pt; color: #646f7c; line-height: 1.5; margin-top: 10px;
+    
+    }
+
+footer #info2 a p{float: left; color: #C5C8CE; text-decoration-line: underline; line-height:20; line-break: 1; font-size:20pt; }
   
 
 }
