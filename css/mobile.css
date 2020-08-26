@@ -1,0 +1,30 @@
+*{margin: 0px; padding: 0px; text-transform: uppercase; border: 0;}
+ul,li{list-style: none; display:list-item;}
+ul{margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;}
+a{text-decoration: none;
+    color: rgba(0,0,0,1);
+
+    }
+
+@media all and (max-width: 768px){
+    .btn{
+        font-size: 11pt;
+        line-height: 32px;
+    }
+    #sec2 ul li{
+        width: 100%;
+    }
+    #sec2 ul li a{
+        padding: 16px 22px;
+        font-size: 11px;
+    }
+
+}
+#sec2 ul{
+    display: block;
+}
+
