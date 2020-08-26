@@ -2,6 +2,7 @@
 ul{list-style: none;}
 a{text-decoration: none;}
 
+
 @font-face{
   font-family: "My Font";
   src:url("../font/MapoMaponaru.ttf");
@@ -80,7 +81,7 @@ header nav>a{
 }
 
 #head-content h1{
-    font-size: 60px;
+    font-size: 40px;
     color: whitesmoke;
     margin:0px auto 60px auto;
 }
@@ -146,16 +147,17 @@ section>div:nth-child(1){
     margin: 0 auto;
     padding-top: 10px;
 }
+
+
+/* 추가부분 */
 section>div:nth-child(2){
     width: 100%;
     padding: 70px 0;
 }
 
-
-
 section>div:nth-child(2) p{
   text-align: center;
-    font-size: 35px;
+  font-size: 25px;
     font-family: YBLO05;
     color: silver;
 }
@@ -188,10 +190,55 @@ section>div:nth-child(1) article p{
     font-size: 18px;
     /* font-family: HYWULM,'Courier New', Courier, monospace; */
     color: darkgray;
+    margin-bottom: 15px;
 }
 
 
 
+ #res-li li:nth-child(1)>a::before{
+     display: block;
+    content: "카셰어링 쏘카";
+    border-top: 1px solid #dbd9d9;
+    border-bottom: 1px solid #dbd9d9;
+    padding: 10px;
+    
+  }
+  #res-li li:nth-child(2)>a::before{
+    display: block;
+    content: "쏘카 비즈니스";
+    border-bottom: 1px solid #dbd9d9;
+    padding: 10px;
+  }
+  #res-li li:nth-child(3)>a::before{
+    display: block;
+    content:"쏘카 플랜";
+    border-bottom: 1px solid #dbd9d9;
+    padding: 10px;
+  }
+  #res-li li:nth-child(4)>a::before{
+    display: block;
+    content: "쏘카 페어링";
+    border-bottom: 1px solid #dbd9d9;
+    padding: 10px;
+  }
+  #res-li li:nth-child(5)>a::before{
+    display: block;
+    content: "쏘카 이용 안내";
+    border-bottom: 1px solid #dbd9d9;
+    padding: 10px;
+  }
+  #res-li li:nth-child(6)>a::before{
+    display: block;
+    content: "요금 보기";
+    border-bottom: 1px solid #dbd9d9;
+    padding: 10px;
+  }
+  #res-li li:nth-child(7)>a::before{
+    display: block;
+    content: "혜택 확인하기";
+    border-bottom: 1px solid #dbd9d9;
+    padding: 10px;
+  }
 
 /* footer 시작 */
 footer{
@@ -205,7 +252,7 @@ footer>div{
     width: 980px;
     max-width: 100%;
     margin: 0 auto;
-    
+    padding-left: 13px;
 }
 
 footer ul:nth-child(1) li{
