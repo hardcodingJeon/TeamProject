@@ -1,31 +1,47 @@
-let flag = 50;
-        
-        $(window).scroll(function(){  
-            let hscroll = $(this).scrollTop();
-    
-            if( hscroll  >= flag ){
-                $('.header').addClass('act smooth'); // act class는 없어도됨, class 두개 추가된것임
-                $('#socarLogo').addClass('socarLogo');
-                $('.line').addClass('navmenu');
-                
-            }
-            else {
-                $('.header').removeClass('act smooth');
-                $('#socarLogo').removeClass('socarLogo');
-                $('.line').removeClass('navmenu');
+$(document).ready(function () {
+
+    // 스크롤 안했을때도 발동
+    $('.hideLeft').each(function (i) {
+        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height()+400;  // 위치가 잘 안맞아서 임의대로 +300해보니 잘맞음
+        if (bottom_of_window > bottom_of_object) {
+            $(this).addClass('fadeLeft');
+        }
+    });
+
+    $('.hideRight').each(function (i) {
+        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height()+300;
+        if (bottom_of_window > bottom_of_object) {
+            $(this).addClass('fadeRight');
+        }
+    });
+
+    $(window).scroll(function () {
+
+        // $('.hideme').each(function (i) {
+        //     var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        //     var bottom_of_window = $(window).scrollTop() + $(window).height();
+        //     /* 3 */
+        //     if (bottom_of_window > bottom_of_object) {
+        //         $(this).animate({ 'opacity': '1' }, 500);
+        //     }
+        // });
+
+        $('.hideLeft').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height()+300;
+            if (bottom_of_window > bottom_of_object) {
+                $(this).addClass('fadeLeft');
             }
         });
-
-        
-
-        $('#line-wrapper').click(function(){
-            $('.line').removeClass('init');
-            $('#line-top').toggleClass('line-top').toggleClass('top-reverse');
-            $('#line-mid').toggleClass('line-mid').toggleClass('mid-reverse');
-            $('#mySidenav').toggleClass('closeNav').toggleClass('openNav');
-          });
-          
-        
-
-        
-
+    
+        $('.hideRight').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height()+300;
+            if (bottom_of_window > bottom_of_object) {
+                $(this).addClass('fadeRight');
+            }
+        });
+    });
+});

@@ -13,6 +13,19 @@ a{text-decoration: none;}
     /* css은 다른 파일 경로는 url() 사용 */
   }
 
+  @keyframes fadeLeft{
+    0% {transform: translateX(30px); opacity: 0;  }
+    100% {transform: translateX(0px); opacity: 1;}
+  }
+  
+  .fadeLeft{
+    animation: fadeLeft .6s forwards ease-out;
+  }
+  .hideLeft{
+    opacity: 0;
+  }
+
+
 .smooth { 
     transition: all 250ms ease-in;
     -webkit-transition: all 250ms ease-in;

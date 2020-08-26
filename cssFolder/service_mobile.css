@@ -1,4 +1,4 @@
-*{padding: 0; margin: 0;}
+*{padding: 0px; margin: 0px;}
 ul{list-style: none;}
 a{text-decoration: none;}
 
@@ -11,6 +11,19 @@ a{text-decoration: none;}
     font-family: "Swagger";
     src:url("../font/Swagger.ttf");
     /* css은 다른 파일 경로는 url() 사용 */
+  }
+
+
+  @keyframes fadeLeft{
+    0% {transform: translateX(30px); opacity: 0;  }
+    100% {transform: translateX(0px); opacity: 1;}
+  }
+  
+  .fadeLeft{
+    animation: fadeLeft .6s forwards ease-out;
+  }
+  .hideLeft{
+    opacity: 0;
   }
 
 .smooth { 
@@ -85,7 +98,7 @@ header img{
   }
 
   #head-content h1{
-    font-size: 30px;
+    font-size: 25px;
     color: whitesmoke;
     /* align-self: center;
     justify-self: center; */
@@ -93,12 +106,11 @@ header img{
     /* margin:0px auto 60px auto; */
 }
 #head-content h2{
-    font-size: 20px;
+    font-size: 15px;
     color: whitesmoke;
     /* align-self: center;
     justify-self: center; */
     text-align: center;
-    /* margin:0px auto 60px auto; */
 }
 
     /* 네이게이션 메뉴 */
@@ -276,60 +288,65 @@ section article img{
 }
 
 #res-li ul{
-    
-    list-style: decimal;
+  list-style-position: inside;
+}
+#res-li ul li{
+padding-left: 20px;
+border-bottom: 1px solid #dbd9d9;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+#res-li ul li:nth-child(1){
+border-top: 1px solid #dbd9d9;
+list-style-image: url(../image/list1.png);
+}
+#res-li ul li:nth-child(2){
+list-style-image: url(../image/list2.png);
+}
+#res-li ul li:nth-child(3){
+list-style-image: url(../image/list3.png);
+}
+#res-li ul li:nth-child(4){
+list-style-image: url(../image/list4.png);
+}
+#res-li ul li:nth-child(5){
+list-style-image: url(../image/list5.png);
+}
+#res-li ul li:nth-child(6){
+list-style-image: url(../image/list6.png);
+}
+#res-li ul li:nth-child(7){
+list-style-image: url(../image/list7.png);
 }
 
 #res-li a{
-    font-family: My Font,serif;
+  font-family: My Font,serif;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
+    margin-left: 8px;
 }
 
- #res-li li:nth-child(1)>a::before{
-     display: block;
-    content: "카셰어링 쏘카";
-    border-top: 1px solid #dbd9d9;
-    border-bottom: 1px solid #dbd9d9;
-    padding: 10px;
-    
-  }
-  #res-li li:nth-child(2)>a::before{
-    display: block;
-    content: "쏘카 비즈니스";
-    border-bottom: 1px solid #dbd9d9;
-    padding: 10px;
-  }
-  #res-li li:nth-child(3)>a::before{
-    display: block;
-    content:"쏘카 플랜";
-    border-bottom: 1px solid #dbd9d9;
-    padding: 10px;
-  }
-  #res-li li:nth-child(4)>a::before{
-    display: block;
-    content: "쏘카 페어링";
-    border-bottom: 1px solid #dbd9d9;
-    padding: 10px;
-  }
-  #res-li li:nth-child(5)>a::before{
-    display: block;
-    content: "쏘카 이용 안내";
-    border-bottom: 1px solid #dbd9d9;
-    padding: 10px;
-  }
-  #res-li li:nth-child(6)>a::before{
-    display: block;
-    content: "요금 보기";
-    border-bottom: 1px solid #dbd9d9;
-    padding: 10px;
-  }
-  #res-li li:nth-child(7)>a::before{
-    display: block;
-    content: "혜택 확인하기";
-    border-bottom: 1px solid #dbd9d9;
-    padding: 10px;
-  }
+#res-li li:nth-child(1)>a::before{
+  content: "카셰어링 쏘카";
+}
+#res-li li:nth-child(2)>a::before{
+  content: "쏘카 비즈니스";
+}
+#res-li li:nth-child(3)>a::before{
+  content:"쏘카 플랜";
+}
+#res-li li:nth-child(4)>a::before{
+  content: "쏘카 페어링";
+}
+#res-li li:nth-child(5)>a::before{
+  content: "쏘카 이용 안내";
+}
+#res-li li:nth-child(6)>a::before{
+  content: "요금 보기";
+}
+#res-li li:nth-child(7)>a::before{
+  content: "혜택 확인하기";
+}
 
 /* footer 시작 */
 footer{

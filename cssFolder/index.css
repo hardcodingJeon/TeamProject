@@ -4,13 +4,35 @@ a{text-decoration: none;}
 
 @font-face{
   font-family: "My Font";
-  src:url("../font/MapoMaponaru.ttf");
+  src:url("../font/paybooc\ ExtraBold.ttf");
   /* css은 다른 파일 경로는 url() 사용 */
 }
 @font-face{
 font-family: "Swagger";
 src:url("../font/Swagger.ttf");
 /* css은 다른 파일 경로는 url() 사용 */
+}
+
+@keyframes fadeLeft{
+  0% {transform: translateX(30px); opacity: 0;  }
+  100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes fadeRight{
+  0% {transform: translateX(-30px); opacity: 0;  }
+  100% {transform: translateX(0px); opacity: 1;}
+}
+
+.fadeLeft{
+  animation: fadeLeft .6s forwards ease-out;
+}
+
+.fadeRight{
+  animation: fadeRight .6s forwards ease-out;
+}
+
+.hideLeft,.hideRight{
+  opacity: 0;
 }
 
 .smooth { 
@@ -167,7 +189,7 @@ section>div:nth-child(2) b{
 
 section article{
     margin-top: 130px;
-    height: 100%;
+    /* height: 100%; */
     padding-left: 30px;
     
 }
