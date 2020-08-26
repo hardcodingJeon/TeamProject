@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main screen</title>
+
+    <link rel="stylesheet" href="./cssFolder/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 <body>
+    <!-- 1. socar 메인 키워드 눌렀을때 홈으로 가는 기능, 2. 네비게이션 메뉴완성, 3. 사진페이드 인아웃, 4. 가로스크롤되는 이유 찾기  -->
+    <header>
+        <div id="main">
+            <div id="black-bg">
+                    <!-- <h2>SOCAR</h2> -->
+                    <div id="head-content">
+                        <h1>차가 필요한<br>모든 순간, <b>쏘카</b></h1>
+                    </div>
+            </div>
+            <video id="video" src="https://www.socar.kr/video/main4.mp4" muted loop playsinline autoplay poster id ></video>
+            
+            <div id="mySidenav" class="closeNav">
+                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <a href="./service.html">쏘카 서비스</a>
+                <a href="#">이용 안내</a>
+                <a href="#">요금 안내</a>
+                <a href="#">혜택 안내</a>
+            </div>
+
+            <nav class="header">
+                <a href="./index.html" id="socarLogo">SOCAR</a>
+                <div id="line-wrapper">
+                    <div id="line-top" class="line init top-reverse" ></div>
+                    <div id="line-mid" class="line init mid-reverse" ></div>
+                </div>
+            </nav>
+        </div>
+
+        
+        
+    </header>
     
+    <section>
+        <div>
+            <!-- jquery fadein 사용할것 -->
+            <article id="article1">
+                <h1 id="art1_h1">24시간 언제나<b>.</b></h1><br>
+                <p>한밤중이나 주말에도 스마트폰으로<br>시간에 구애받지 않고<br>쏘카와 함께 이동하세요.</p>
+                <img src="./image/arti01_1.png" alt="" width="45%"  >
+                <img src="./image/arti01_2.png" width="45%">
+            </article><br><br><br>
+    
+            <article id="article2">
+                <h1 id="art1_h2">원하는 곳에서<b>.</b></h1><br>
+                <p>내 주변 3분 거리 쏘카존에서<br>혹은 내가 있는 곳으로 쏘카를 불러<br>어디서나 편하게 출발하세요.</p>
+                <img src="./image/arti02_1.png" alt="" width="45%">
+                <img src="./image/arti02_2.png" alt="" width="45%">
+            </article><br><br><br>
+    
+            <article id="article3">
+                <h1 id="art1_h3">필요한 시간만큼<b>.</b></h1><br>
+                <p style="margin-bottom: 20px;">간단한 장보기 부터 주말여행까지<br>10분 단위로 원하는 만큼만 이용하세요.</p>
+                <img src="./image/arti03.png" alt="" width="100%">
+            </article><br><br><br>
+    
+            <article id="article4">
+                <h1 id="art1_h4">다양한 차종을<b>.</b></h1><br>
+                <p>연인과의 드라이브부터 가족 캠핑까지<br>상황에 맞게 50여 종의 차량을<br>선택해서 이용하세요.</p>
+                <img src="./image/arti04_1.png" alt="" width="45%">
+                <img src="./image/arti04_2.png" alt="" width="45%">
+            </article>
+        </div>
+
+        <div>
+            <article>
+                <p>지금 바로 <b>쏘카 드라이브</b>를<br> 시작하세요.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href=""><img src="https://www.socar.kr/images/i-instagram.svg" alt=""></a></li>
+                <li><a href=""><img src="https://www.socar.kr/images/i-facebook.svg" alt=""></a></li>
+                <li><a href=""><img src="https://www.socar.kr/images/i-youtube.svg" alt=""></a></li>
+                <li><a href=""><img src="https://www.socar.kr/images/i-blog.svg" alt=""></a></li>
+            </ul>
+            <ul>
+                <li>회사소개</li>
+                <li>인재채용</li>
+                <li>나눔카</li>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>위치기반서비스 이용약관</li>
+                <li>고객센터</li>
+                <li>제휴 문의</li>
+            </ul>  
+            <div id="div-left">
+                <p>주소. 제주특별자치도 제주시 연미길 42(오라삼동)</p>
+                <p>전화. 1661-3315</p>
+                <p>팩스. 02-6969-9333</p>
+                <p>2019 SOCAR All rights reserved.</p>
+            </div>  
+            <div id="div-right">
+                <p>(주)쏘카 통신판매업 사업자정보확인</p>
+                <p>신고: 제 2019-제주오라-3호, 정보보호최고책임자: 원종필, 사업자등록번호</p>
+                <p>616-81-90529, 대표자: 박재욱</p>
+
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="./jsFolder/index.js"></script>
+
+
 </body>
 </html>

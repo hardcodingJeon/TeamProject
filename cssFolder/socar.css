@@ -1,0 +1,35 @@
+
+
+/* common 
+------------------------------------------------------------------------ */
+.mv {
+	transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity .5s ease;
+	opacity: 0;
+	transform: translate3d(50px, 0px, 0);
+}
+.mv2 {
+	transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity .5s ease;
+	opacity: 0;
+	transform: translate3d(0, 40px, 0);
+}
+.mv3 {
+	opacity: 0;
+	transition: opacity .8s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transform: translate3d(0px, 10px, 0);
+}
+.mvright {
+	transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity .5s ease;
+	transform: translate3d(500px, 0px, 0);
+}
+.moveit {
+	transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity .5s ease;
+	opacity: 1;
+    transform: translate3d(0, 0, 0);
+    
+    /* width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
+
+}
