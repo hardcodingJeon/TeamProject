@@ -35,83 +35,42 @@ src:url("../font/Swagger.ttf");
   opacity: 0;
 }
 
+
+
+/* 탑바, 햄버거,네비게이션 메뉴 시작점 */
+
 .smooth { 
-    transition: all 250ms ease-in;
-    -webkit-transition: all 250ms ease-in;
-    -moz-transition: all 250ms ease-in;
-    -o-transition: all 250ms ease-in;
-    background-color: rgba(255,255,255,0.86);
+  transition: all 250ms ease-in;
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  -o-transition: all 250ms ease-in;
+  background-color: rgba(255,255,255,0.86);
 }
 .socarLogo{
-    transition: all 250ms ease-in;
-    -webkit-transition: all 250ms ease-in;
-    -moz-transition: all 250ms ease-in;
-    -o-transition: all 250ms ease-in;
-    color: deepskyblue;
-}
-
-
-#main{
-    width: 100%; height: 600px;
-    position: relative;
-    overflow: hidden;
-}
-#main>.header{
-    position: fixed; 
-    top: 0;
-    width: 100%; 
-    height: 50px; 
-    /* color: white;  */
-    line-height: 50px; 
-    padding-left: 15px;
-    z-index: 2;
+  transition: all 250ms ease-in;
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  -o-transition: all 250ms ease-in;
+  color: deepskyblue;
 }
 
 header nav>a{
-    color: white;
-    padding-top: 5px;
-    font-size: 32px;
-    font-family: Swagger,serif;
+  color: white;
+  padding-top: 5px;
+  font-size: 32px;
+  font-family: Swagger,serif;
 }
 
-#main>nav>h2{
-    display: inline-block;
+#main>.header{
+  position: fixed; 
+  top: 0;
+  width: 100%; 
+  height: 50px; 
+  /* color: white;  */
+  line-height: 50px; 
+  padding-left: 15px;
+  z-index: 2;
 }
-
-
-#video{
- 
-    object-fit: cover;
-    min-height: 100%;
-    width: 100%;
-    z-index: -2;
-
-}
-
-#black-bg{
-    width: 100%; height: 100%;
-    position: absolute;
-    /* z-index: -1; */
-    /* background-color: rgba(0,0,0, 0.7); */
-}
-
-#head-content{
-    width: 100%; height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#head-content h1{
-    font-size: 60px;
-    color: whitesmoke;
-    margin:0px auto 60px auto;
-}
-
-#black-bg b{
-    color: deepskyblue;
-}
-
-/* 네이베이션 메뉴 */
 
 #mySidenav>a{
   font-weight: bold;
@@ -159,6 +118,135 @@ header nav>a{
   .sidenav a:hover {
     color: #f1f1f1;
   }
+
+  #line-wrapper {
+    cursor: pointer;
+    width:30px;
+    height:35px;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    /* top:52.5px;
+    left:47px; */
+    /* display: flex; */
+    /* align-items: center; */
+  }
+  
+  
+  .line {
+    background:#ffffff;
+    width:30px;
+    height:3px; 
+    margin-top:11px;
+    margin-bottom:11px;
+    border-radius:2px;
+    box-shadow:0 1px 3px rgba(0,0,0,.5);
+    position: relative;
+  }
+  
+  .navmenu{
+      transition: all 250ms ease-in;
+      -webkit-transition: all 250ms ease-in;
+      -moz-transition: all 250ms ease-in;
+      -o-transition: all 250ms ease-in;
+      background: deepskyblue;
+  }
+
+  .init {
+    animation:none !important;
+  }
+  
+  
+  .line-top {
+    animation:line-top .4s forwards ease-out;
+  }
+
+  .top-reverse {
+    animation: line-top-reverse .4s  forwards ease-out;
+  }
+  
+  .line-mid {
+    animation:line-mid .4s forwards ease-out;
+  }
+
+  .mid-reverse {
+    animation: line-mid-reverse .4s  forwards ease-out;
+  }
+  
+  /* 추가된 부분 */
+  @keyframes line-top {
+    /* 0% {transform:translateY(0px)}
+    100% {transform:translateY(7px)} */
+  
+    0% {transform:translateY(0px) rotateZ(0deg)}
+    100% {transform:translateY(7px) rotateZ(45deg)}
+  }
+  @keyframes line-top-reverse {
+    0% {transform:translateY(7px) rotateZ(45deg)}
+    100% {transform:translateY(0px) rotateZ(0deg)}
+  }
+  
+  @keyframes line-mid {
+    /* 0% {transform:scale(1)}
+    100% {transform:scale(0)} */
+  
+    /* 0% {transform:translateY(0px)}
+    100% {transform:translateY(-7px)} */
+  
+    0% {transform:translateY(0px) rotateZ(0deg)}
+    100% {transform:translateY(-7px) rotateZ(-45deg)}
+  }
+  @keyframes line-mid-reverse {
+    0% {transform:translateY(-7px) rotateZ(-45deg)}
+    100% {transform:translateY(0px) rotateZ(0deg)}
+  }
+
+
+
+/* 탑바, 햄버거,네비게이션 메뉴 끝 */
+
+
+#main{
+    width: 100%; height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+#video{
+ 
+    object-fit: cover;
+    min-height: 100%;
+    width: 100%;
+    z-index: -2;
+
+}
+
+#black-bg{
+    width: 100%; height: 100%;
+    position: absolute;
+    /* z-index: -1; */
+    /* background-color: rgba(0,0,0, 0.7); */
+}
+
+#head-content{
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#head-content h1{
+    font-size: 60px;
+    color: whitesmoke;
+    margin:0px auto 60px auto;
+}
+
+#black-bg b{
+    color: deepskyblue;
+}
+
+
+
+
 
 
 
@@ -266,88 +354,7 @@ footer #div-right>p{
     color: lightslategrey;
 }
 
-#line-wrapper {
-    cursor: pointer;
-    width:30px;
-    height:35px;
-    position: absolute;
-    right: 40px;
-    top: 5px;
-    /* top:52.5px;
-    left:47px; */
-    /* display: flex; */
-    /* align-items: center; */
-  }
-  
-  
-  .line {
-    background:#ffffff;
-    width:30px;
-    height:3px; 
-    margin-top:11px;
-    margin-bottom:11px;
-    border-radius:2px;
-    box-shadow:0 1px 3px rgba(0,0,0,.5);
-    position: relative;
-  }
-  
-  .navmenu{
-      transition: all 250ms ease-in;
-      -webkit-transition: all 250ms ease-in;
-      -moz-transition: all 250ms ease-in;
-      -o-transition: all 250ms ease-in;
-      background: deepskyblue;
-  }
 
-  /* 애니메이션 시작 */
-  .init {
-    animation:none !important;
-  }
-  
-  
-  .line-top {
-    animation:line-top .4s forwards ease-out;
-  }
-
-  .top-reverse {
-    animation: line-top-reverse .4s  forwards ease-out;
-  }
-  
-  .line-mid {
-    animation:line-mid .4s forwards ease-out;
-  }
-
-  .mid-reverse {
-    animation: line-mid-reverse .4s  forwards ease-out;
-  }
-  
-  /* 추가된 부분 */
-  @keyframes line-top {
-    /* 0% {transform:translateY(0px)}
-    100% {transform:translateY(7px)} */
-  
-    0% {transform:translateY(0px) rotateZ(0deg)}
-    100% {transform:translateY(7px) rotateZ(45deg)}
-  }
-  @keyframes line-top-reverse {
-    0% {transform:translateY(7px) rotateZ(45deg)}
-    100% {transform:translateY(0px) rotateZ(0deg)}
-  }
-  
-  @keyframes line-mid {
-    /* 0% {transform:scale(1)}
-    100% {transform:scale(0)} */
-  
-    /* 0% {transform:translateY(0px)}
-    100% {transform:translateY(-7px)} */
-  
-    0% {transform:translateY(0px) rotateZ(0deg)}
-    100% {transform:translateY(-7px) rotateZ(-45deg)}
-  }
-  @keyframes line-mid-reverse {
-    0% {transform:translateY(-7px) rotateZ(-45deg)}
-    100% {transform:translateY(0px) rotateZ(0deg)}
-  }
 
   /* @keyframes line-bot {
     0% {transform:translateY(0px)}
