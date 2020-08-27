@@ -1,0 +1,263 @@
+
+
+@media all and (min-width: 700px) {
+    .naeyong .x490{display:none;}    
+}
+
+
+
+
+#hamberger {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 36px;
+    height: 14px;
+    cursor: pointer;
+    z-index: 100;}
+    
+    #hamberger span {
+    width: 26px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    top: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+}
+
+#hamberger span:last-child {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+}   
+
+    * {
+      margin:0px; padding:0px;
+      }
+    .mainBox {
+      width: 100%;
+      height: 70px;
+      position: fixed;
+      bottom: 0px;
+      text-align: right;
+      z-index: 100;
+      
+    }
+      .inBox {
+        display: inline-block;
+        width: 300px;
+        height: 70px;
+        background-color: #00a2ff;
+        line-height: 70px;
+        font-size: 14pt;
+        border-top-left-radius: 100px;
+      
+        text-align: center;      
+        color: #fff;
+        font-weight: bold;
+        
+      }
+      .inBox:hover {
+      background-color: #0a5a88;
+      transition: all linear 1s;
+      }
+
+
+  #test {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+    .fadeinleft {
+    opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
+}
+  .span {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12pt;
+    margin-right: 8px;
+    background-color: #0BB8FF;
+    color: #fff;
+    text-align: center;
+    margin-left: 8px;
+    line-height: 13pt;
+}
+
+
+[class*="btn-"] {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    color: #10a0f3;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 45px;
+    margin-right:3em;
+    max-width: 120px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+  
+.btn-1 {
+    letter-spacing: 0;
+    -webkit-transition: all .28s ease-in-out;
+    transition: all .28s ease-in-out;
+    
+}
+.btn-1:hover,
+.btn-1:focus,
+.btn-1:active {
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+.btn-1:after,
+.btn-1:before {
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all .28s ease-in-out;
+    transition: all .28s ease-in-out;
+    
+    width: 0;
+}
+.btn-1:hover:after,
+.btn-1:hover:before {
+    border-color: #10a0f3;;
+    -webkit-transition: width 350ms ease-in-out;
+    transition: width 350ms ease-in-out;
+    text-decoration: none;
+    width: 100%;
+}
+.btn-1:hover:before {
+  
+    bottom: auto;
+    top: 0;
+}
+ 
+  *{margin: 0; padding: 0;}
+             button{background: 0 none; border: 0 none;}
+            .buttons{position: relative; text-align: center;}
+            .buttons button{text-align: start; font-size: 13px; padding-left: 16px; font-weight: bold;  color: black; overflow: hidden; position: relative; display: inline-block; vertical-align: top; width: 80vw; height: 50px; line-height: 10px; border: 6px solid #10a0f3; transition: all 0.5s;}
+            .buttons button:hover{color: white; box-shadow: 3px 3px 10px #10a0f3;}
+            .buttons button:before{content: ""; z-index: -1; position: absolute; background: #10a0f3; transition: all 1s;}
+            .buttons.buttons2 .button5:before{left: 50%; top: 0; transform: translateX(-50%); width: 0; height: 100%;}
+            .buttons.buttons2 .button5:hover:before{width: 100%;}
+ 
+.img{
+        position: relative;
+        background-image: url(./img/ggfd.jpg);                                                               
+        height: 22vh;
+        background-size: cover;
+    }
+    
+    /* .img-cover1{
+       position: relative;
+       width: 85pt;
+       height: 18pt;
+       left: 30px;
+       top: 20px;
+       background-image: url(./img/logo-w.svg);                                                           
+       z-index:3;
+    } */
+
+    .img-cover2{
+       position: relative;
+       height: 25px;
+       width: 120px;
+       left: 200px;
+       top: 20px;
+       background-image: url(./img/hiclipart.com.png);                                                           
+       z-index:3;
+    }
+
+    
+
+    .img .content{
+         position: absolute;
+         top:50%;
+         left:50%;
+         transform: translate(-50%, -50%);                                                                   
+         font-size:5rem;
+         color: white;
+         z-index: 2;
+         text-align: center;
+    } 
+
+    .img01{
+            position: relative;
+            background-image: url(./img/sky.png);                                                               
+            height: 30vh;
+            background-size: cover;
+        }
+    
+        .img01-cover01{
+           position: absolute;
+           height: 100%;
+           width: 100%;
+           background-color: rgba(0, 0, 0, 0.7);                                                                 
+           z-index:1;
+        }
+    
+        .img01 .content01{
+             position: absolute;
+             top:50%;
+             left:50%;
+             transform: translate(-50%, -50%);                                                                   
+             font-size:5rem;
+             color: white;
+             z-index: 2;
+             text-align: center;
+        } 
