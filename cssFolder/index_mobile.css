@@ -249,6 +249,7 @@ section>div:nth-child(1) article p{
 }
 
 #res-li a{
+    color: black;
     font-family: My Font,serif;
     font-weight: bold;
     font-size: 20px;

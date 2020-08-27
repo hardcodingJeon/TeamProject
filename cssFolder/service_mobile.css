@@ -320,6 +320,7 @@ list-style-image: url(../image/list7.png);
 }
 
 #res-li a{
+  color: black;
   font-family: My Font,serif;
     font-weight: bold;
     font-size: 20px;

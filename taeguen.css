@@ -23,8 +23,8 @@ a{text-decoration: none;}
     -o-transition: all 250ms ease-in;
     color: deepskyblue;
   }
+
   header nav a{
-    
     color: white;
     padding-top: 5px;
     font-size: 32px;
