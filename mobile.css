@@ -178,7 +178,7 @@ footer ul#customer li h5{font-size: 10pt; line-height: 1.7;}
 
 footer ul#info1{position: static; width: 50%; float: left;}
 
-footer ul#info1 li{font-size: 10pt; line-height: 1.7; color: #646f7c;}
+footer ul#info1 li{font-size: 10pt; line-height: 100%; color: #646f7c;}
 
 footer ul#info2{float: left; width: 50%;}
 
