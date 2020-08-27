@@ -6,6 +6,190 @@
 body{ line-height: 1; vertical-align: bottom;}
 
 
+/* 탑바, 햄버거,네비게이션 메뉴 시작점 */
+
+@font-face{
+    font-family: "Swagger";
+    src:url("./font/Swagger.ttf");
+    /* css은 다른 파일 경로는 url() 사용 */
+    }
+
+.smooth { 
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    background-color: rgba(255,255,255,0.86);
+  }
+  .socarLogo{
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    color: deepskyblue;
+  }
+  header nav a{
+    
+    color: white;
+    padding-top: 5px;
+    font-size: 32px;
+    font-family: Swagger,serif;
+  }
+  
+  #socarLogo{
+    text-decoration: none;
+  }
+  #socarLogo:hover{
+      /* color: white; */
+  }
+  
+  .header{
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    height: 50px; 
+    /* color: white;  */
+    line-height: 50px; 
+    padding-left: 15px;
+    z-index: 5;
+  }
+  
+  #mySidenav>a{
+    font-weight: bold;
+    font-family: initial;
+  }
+  #mySidenav{
+      z-index: 4;
+  }
+  
+  .openNav {
+      height: 100%;
+      width: 280px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+  .closeNav {
+      height: 100%;
+      width: 0px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      /* background-color: #111;
+      overflow-x: hidden;
+      padding-top: 60px; */
+      transition: 0.5s;
+  }
+    #mySidenav a {
+      padding: 8px 8px 8px 32px;
+      width: 250px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    #mySidenav a:hover{
+        color: azure;
+    }
+    
+  
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+  
+    #line-wrapper {
+      cursor: pointer;
+      width:30px;
+      height:35px;
+      position: absolute;
+      right: 0px;
+      right: 26px;
+      top: 5px;
+      /* border: 1px solid red; */
+      /* top:52.5px;
+      left:47px; */
+      /* display: flex; */
+      /* align-items: center; */
+    }
+    
+    
+    .line {
+      background:#ffffff;
+      width:30px;
+      height:3px; 
+      margin-top:11px;
+      margin-bottom:11px;
+      border-radius:2px;
+      box-shadow:0 1px 3px rgba(0,0,0,.5);
+      position: relative;
+    }
+    
+    .navmenu{
+        transition: all 250ms ease-in;
+        -webkit-transition: all 250ms ease-in;
+        -moz-transition: all 250ms ease-in;
+        -o-transition: all 250ms ease-in;
+        background: deepskyblue;
+    }
+  
+    .init {
+      animation:none !important;
+    }
+    
+    
+    .line-top {
+      animation:line-top .4s forwards ease-out;
+    }
+  
+    .top-reverse {
+      animation: line-top-reverse .4s  forwards ease-out;
+    }
+    
+    .line-mid {
+      animation:line-mid .4s forwards ease-out;
+    }
+  
+    .mid-reverse {
+      animation: line-mid-reverse .4s  forwards ease-out;
+    }
+    
+    /* 추가된 부분 */
+    @keyframes line-top {
+      /* 0% {transform:translateY(0px)}
+      100% {transform:translateY(7px)} */
+    
+      0% {transform:translateY(0px) rotateZ(0deg)}
+      100% {transform:translateY(7px) rotateZ(45deg)}
+    }
+    @keyframes line-top-reverse {
+      0% {transform:translateY(7px) rotateZ(45deg)}
+      100% {transform:translateY(0px) rotateZ(0deg)}
+    }
+    
+    @keyframes line-mid {
+      /* 0% {transform:scale(1)}
+      100% {transform:scale(0)} */
+    
+      /* 0% {transform:translateY(0px)}
+      100% {transform:translateY(-7px)} */
+    
+      0% {transform:translateY(0px) rotateZ(0deg)}
+      100% {transform:translateY(-7px) rotateZ(-45deg)}
+    }
+    @keyframes line-mid-reverse {
+      0% {transform:translateY(-7px) rotateZ(-45deg)}
+      100% {transform:translateY(0px) rotateZ(0deg)}
+    }
+  
+  
+  
+  /* 탑바, 햄버거,네비게이션 메뉴 끝 */
 
 
 
