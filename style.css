@@ -1,0 +1,690 @@
+
+@charset "UTF-8";
+        
+
+
+body{ line-height: 1; vertical-align: bottom;}
+
+
+/* 탑바, 햄버거,네비게이션 메뉴 시작점 */
+
+@font-face{
+    font-family: "Swagger";
+    src:url("./font/Swagger.ttf");
+    /* css은 다른 파일 경로는 url() 사용 */
+    }
+
+.smooth { 
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    background-color: rgba(255,255,255,0.86);
+  }
+  .socarLogo{
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    color: deepskyblue;
+  }
+  header nav a{
+    
+    color: white;
+    padding-top: 5px;
+    font-size: 32px;
+    font-family: Swagger,serif;
+  }
+  
+  #socarLogo{
+    text-decoration: none;
+  }
+  #socarLogo:hover{
+      /* color: white; */
+  }
+  
+  .header{
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    height: 50px; 
+    /* color: white;  */
+    line-height: 50px; 
+    padding-left: 15px;
+    z-index: 5;
+  }
+  
+  #mySidenav>a{
+    font-weight: bold;
+    font-family: initial;
+  }
+  #mySidenav{
+      z-index: 4;
+  }
+  
+  .openNav {
+      height: 100%;
+      width: 280px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
+  .closeNav {
+      height: 100%;
+      width: 0px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      /* background-color: #111;
+      overflow-x: hidden;
+      padding-top: 60px; */
+      transition: 0.5s;
+  }
+    #mySidenav a {
+      padding: 8px 8px 8px 32px;
+      width: 250px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    #mySidenav a:hover{
+        color: azure;
+    }
+    
+  
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+  
+    #line-wrapper {
+      cursor: pointer;
+      width:30px;
+      height:35px;
+      position: absolute;
+      right: 0px;
+      right: 26px;
+      top: 5px;
+      /* border: 1px solid red; */
+      /* top:52.5px;
+      left:47px; */
+      /* display: flex; */
+      /* align-items: center; */
+    }
+    
+    
+    .line {
+      background:#ffffff;
+      width:30px;
+      height:3px; 
+      margin-top:11px;
+      margin-bottom:11px;
+      border-radius:2px;
+      box-shadow:0 1px 3px rgba(0,0,0,.5);
+      position: relative;
+    }
+    
+    .navmenu{
+        transition: all 250ms ease-in;
+        -webkit-transition: all 250ms ease-in;
+        -moz-transition: all 250ms ease-in;
+        -o-transition: all 250ms ease-in;
+        background: deepskyblue;
+    }
+  
+    .init {
+      animation:none !important;
+    }
+    
+    
+    .line-top {
+      animation:line-top .4s forwards ease-out;
+    }
+  
+    .top-reverse {
+      animation: line-top-reverse .4s  forwards ease-out;
+    }
+    
+    .line-mid {
+      animation:line-mid .4s forwards ease-out;
+    }
+  
+    .mid-reverse {
+      animation: line-mid-reverse .4s  forwards ease-out;
+    }
+    
+    /* 추가된 부분 */
+    @keyframes line-top {
+      /* 0% {transform:translateY(0px)}
+      100% {transform:translateY(7px)} */
+    
+      0% {transform:translateY(0px) rotateZ(0deg)}
+      100% {transform:translateY(7px) rotateZ(45deg)}
+    }
+    @keyframes line-top-reverse {
+      0% {transform:translateY(7px) rotateZ(45deg)}
+      100% {transform:translateY(0px) rotateZ(0deg)}
+    }
+    
+    @keyframes line-mid {
+      /* 0% {transform:scale(1)}
+      100% {transform:scale(0)} */
+    
+      /* 0% {transform:translateY(0px)}
+      100% {transform:translateY(-7px)} */
+    
+      0% {transform:translateY(0px) rotateZ(0deg)}
+      100% {transform:translateY(-7px) rotateZ(-45deg)}
+    }
+    @keyframes line-mid-reverse {
+      0% {transform:translateY(-7px) rotateZ(-45deg)}
+      100% {transform:translateY(0px) rotateZ(0deg)}
+    }
+  
+  
+  
+  /* 탑바, 햄버거,네비게이션 메뉴 끝 */
+
+
+
+
+
+
+/* logo */
+
+#header-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	box-sizing: border-box;
+}
+
+.ctw{ transform: translate(-50%,0);}
+
+div{display: block;}
+
+
+
+
+
+/* header */
+
+.jumbotron{
+	background-image: 
+	
+	url(https://www.socar.kr/images/fare-head.jpg);
+	background-size: cover;
+}
+
+.ctw{position: absolute; transform: translate(-46.5%, 70%);}
+
+#header-inner{
+	position: relative;
+	left: 50%;
+	
+	max-width: 100%;
+	max-height: 100%;}
+
+
+header #logo-blue{width: 116px;
+	position: absolute;
+    top: 50%;
+    z-index: 90;
+	left: 40px;
+	transform: translate(-46.5%, 80%);
+    display: none;}
+    
+    
+header #logo{width: 116px;
+    position: absolute;
+    top: 50%;
+    z-index: 110;
+	left: 40px;
+	display: block;
+	transform: translate(-46.5%, 70%);}
+
+
+/* hamberger  */
+#hamberger{
+	position: absolute;
+	top: 85px;
+	right: 40px;
+	width: 36px;
+	height: 14px;
+	cursor: pointer;
+	z-index: 100;
+	transform: translate(1%,-450%);
+}
+#hamberger span{
+	position: absolute;
+	width: 26px;
+	height: 3px;
+	background-color: #fff;
+	display: block;
+	top: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 200ms ease-in-out;
+	-moz-transition: 200ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+}
+#hamberger span:last-child{
+	position: absolute;
+	top:auto;
+	right: 0;
+	bottom: 0;
+}
+
+#hamberger span:nth-child(1){
+	bottom: 0px;
+}
+
+#hamberger.open span{
+	right: 0;
+	width: 80%;
+	top: 50%;
+}
+
+#hamberger.open span:nth-child(1) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+#hamberger.open span:last-child {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer ul{list-style: none;}
+
+
+footer{
+  overflow: auto;
+  background-color: #28323C;
+  width: 100%; padding: 40px 0px 0px;
+  position: absolute;
+  box-sizing: border-box; padding-bottom: 74px;
+  }
+
+/* sns */
+
+#sns {width: 100%; margin-bottom: 16px; overflow: auto; }
+
+#sns li{float: left; margin-right: 12px; width: 30px; }
+
+#sns li a{ display: block;}
+
+
+
+/* customer */
+
+footer .sec-wrap{max-width: 910px; margin:  auto;}
+
+footer ul#customer{position: static; font-size: 0;
+letter-spacing: 0; word-spacing: 0; margin-bottom: 8px; ;}
+
+footer ul#customer li{font-size: 15pt; display: inline-block; color: #646f7c; margin-right: 24px; margin-bottom: 8px; width: auto;}
+
+footer ul#customer li a{font-size: 12pt; color: #C5C8CE;}
+
+footer ul#customer li h5{font-size: 10pt; line-height: 1.7;}
+
+
+/* info */
+
+
+footer ul#info1{position: static; width: 50%; float: left;}
+
+footer ul#info1 li{font-size: 10pt; line-height: 1.5; color: #646f7c;}
+
+footer ul#info2{float: left; width: 50%; height: 100 ; }
+
+footer #info2 li{ line-height: 1; font-size: 10pt; color: #646f7c; line-height: 1.7; }
+
+footer #info2 li a{color: #C5C8CE; text-decoration-line: underline;}
+
+
+/* btn-app */
+/* #btn-app {
+	z-index: 101;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	width: 340px;
+	height: 90px;
+	
+	overflow: hidden;
+	background-color: transparent;
+}
+#btn-app.showing {
+	transition: all 450ms ease;
+	-webkit-transition: all 450ms ease;
+	-moz-transition: all 450ms ease;
+	-o-transition: all 450ms ease;
+	opacity: 1;
+}
+#btn-app.shadow {
+	-webkit-box-shadow: 64px -2px 19px -4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 64px -2px 19px -4px rgba(0,0,0,0.2);
+	box-shadow: 64px -2px 19px -4px rgba(0,0,0,0.2);
+}
+#btn-app #blue {
+	top: 0px;
+	left: 100%;
+	width: 100%;
+	z-index: -1;
+	height: 100%;
+	background-color: #00b8ff;
+	transform: skewX(-0deg) translate3d(200px, 0px, 0);
+}
+#btn-app #blue.showing {
+	transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity .5s ease;
+	left: 0%;
+	opacity: 1;
+	transform: skewX(-30deg) translate3d(0, 0, 0);
+}
+#btn-app img {
+	position: absolute;
+	z-index: 9;
+	top: 50%;
+	left: 7px;
+	width: auto;
+	opacity: 0;
+	height: 60px;
+	border-radius: 12px;
+}
+#btn-app img.showing {
+	opacity: 1;
+	transition: all 250ms ease-in;
+	-webkit-transition: all 250ms ease-in;
+	-moz-transition: all 250ms ease-in;
+	-o-transition: all 250ms ease-in;
+	-webkit-box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+	box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.13);
+}
+#btn-app .sentshowing{
+	font-size: 15pt;
+	letter-spacing: -0.03em;
+	display: block;
+	line-height: 1.3;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.cent{transform: translate(-50%,-50%);}
+
+
+
+#btn-app .sentshowing{
+	position: absolute;
+	left: calc(100% + 12px);
+	top: calc(50% - 2px);
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/arrow-down.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	background-color: transparent;
+}
+
+ */
+
+
+
+/* Main box  */
+.test{
+    width: "100%";
+    background-color:#f7f7f7;
+    border:1px solid #EAEAEA;
+
+    
+  
+}
+
+
+h4{color:#0BB8FF; margin-top: 80px;}
+
+h3{color: white;}
+p1{color: white;}
+i{color: #00469D; font-size: 20px;}
+
+
+/* btn */
+.link-info .btnu {
+    border: none;
+    border-bottom: 3px solid #E9EBEE;
+    height: auto;
+    font-family: "AvenirLTPro-Black", 'sdg-m', sans-serif;
+    line-height: 36px;
+    background-color: transparent;
+    color: #00b8ff;
+    padding-left: 0;
+    padding-right:48px;
+}
+
+.link-info a { margin: 8px 0;}
+
+.link-info .btna{
+	background-image: url(https://www.socar.kr/images/arrow-01.svg);
+}
+.link-info .btn{
+	text-align-last: left;
+	position: sticky;
+	letter-spacing: -0.025;
+	width: auto;
+	padding: 0px 16px;
+	text-transform: uppercase;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: right;
+	transition: all 120ms ease-in;
+	
+
+}
+.link-info .btn:hover{
+	border-color: #00b8ff;
+	transition: all 120ms ease-in; 
+}
+
+
+.link-info .moveit{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+.link-info a{ text-decoration: none;}
+
+
+
+
+/* 모바일전용 */
+@media all and (min-width: 768px){
+	.section  li{display: none;}
+	.info3 {display: none;}
+
+	
+}
+
+
+
+
+@media all and (max-width: 768px) {
+	*{background: transparent; border: 0; margin: 0;  vertical-align: baseline;}
+	body{line-height: 1;}
+  
+	/* logo */
+	header #logo{width: 100px;}
+
+
+	/* jumbotron font */
+	.jumbotron h3{font-size: 15pt; font-weight: bolder;}
+
+	/* hamberger  */
+
+	#hamberger{
+		right: 30px;
+		
+	}
+
+
+	/* btn */
+
+	.link-info .btnu {
+		font-size: 14px;
+		font-weight: bolder;
+		border: none;
+		border-bottom: 3px solid #E9EBEE;
+		height: auto;
+		font-family: "AvenirLTPro-Black", 'sdg-m', sans-serif;
+		line-height: 30px;
+		background-color: transparent;
+		color: #00b8ff;
+		padding-left: 0;
+		padding-right:48px;
+	}
+
+	#sec-more {
+		margin-top: 0;
+		min-height: 0;
+	}
+
+	#sec-more .wrap{
+		padding: 0;
+	}
+	#sec-more ul{
+		width: 100%;
+		max-width: 800px;
+		
+		
+	}
+
+	#sec-more ul li{
+		width: 100%;
+		float: left;
+	}
+	#sec-more ul li a{
+		display: block;
+		padding: 2px 16px;
+		box-sizing: border-box;
+		border-top: 1px solid#ddd;
+		font-size: 12pt;
+		color: #374533;
+		position: relative;
+		padding-left: 2px;
+		text-indent: 32px;
+	}
+
+	#sec-more ul li a::before {
+		position: absolute;
+		left: 20px;
+		top: calc(50% - 2px);
+		line-height: 20px;
+		-webkit-transform: translate(0%, -50%);
+		-moz-transform: translate(0%, -50%);
+		transform: translate(-600%, -50%);
+		content: "";
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		display: block;
+		background-color: #0BB8FF;
+	}
+	#sec-more ul li.business a::before {
+		background-color: #00469D;
+	}
+	#sec-more ul li.pairing a::before {
+		background-color: #FF6F61;
+	}
+	#sec-more ul li.plan a::before {
+		background-color: #FFC400;
+	}
+	#sec-more ul li.arrow a::before {
+		width: 74px;
+		left: 400px;
+		height: 20px;
+		top: 50%;
+		background-image: url(https://www.socar.kr/images/arrow-01.svg);
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 28px;
+		background-color: transparent;
+	}
+
+	#sec-more ul{
+		list-style-type: none;
+	}
+
+
+
+	/* footer */
+
+footer ul{list-style: none;}
+
+footer{
+  overflow: auto;
+  background-color: #28323C;
+  width: 100%; height: 80%; padding: 40px 0px 0px;
+  position: relative;
+  box-sizing: border-box; padding-bottom: 75px;
+}
+
+
+#sns {width: 100%; margin-bottom: 16px; overflow: auto;}
+
+#sns li{float: left; margin-right: 12px; width: 30px; }
+
+#sns li a{ display: block;}
+footer ul#customer li a{font-size: 10pt; color: #C5C8CE; float: left; letter-spacing: 1; margin: auto;}
+
+footer  #info1 li{display: none;}
+
+
+footer ul#info2{display: none;}
+
+#info1  {font: bolder;}
+
+
+
+.info3 p{align-self: start;}
+
+
+
+
+  
+
+}
+
+  
