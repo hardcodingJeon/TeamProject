@@ -1,0 +1,103 @@
+@media all and (max-width: 768px){
+    *{margin: 0px; padding: 0px; text-transform: uppercase; border: 0;}
+    ul,li{list-style: none; display:list-item;}
+    a{text-decoration: none;
+        color: rgba(0,0,0,1);
+
+    }
+    body{
+        width: 100%;
+    }
+
+    header{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #head #imglogo{
+        
+        width: 90px;
+        margin-top: -10px;
+    }
+    .section1 ul button{
+        width: 50%;
+        height: 39px;
+        line-height: 1.2;
+        text-align: center;
+    }
+    .container h4{
+        font-size: 10pt;
+    }
+    #head h1{
+        font-size: 18px;
+    }
+    #head h2{
+        font-size: 14px;
+    }
+    #wrap #top ul li{
+        font-size: 14px;
+    }
+    #sec2 ul{
+        display: block;
+    }
+    #sec2{
+        padding-top: 55px;
+    }
+  
+    #sec2 ul li a{
+        font-weight: 500;
+        font-size: 10pt;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    footer{
+        margin-top: 0;
+    }
+    footer #ct li{
+        font-size: 10px;
+    }
+   
+    
+    #sns{
+        float: left;
+        width: 100%;
+        margin-bottom: 16px;  
+    }
+    #sns img{
+        width: 26px;
+    }
+    #sns li{
+        margin-right: 10px;
+        
+        cursor: pointer;
+        display: list-item;
+        display: inline;
+    }
+    #info li a{
+        font-size: 9pt;
+    }
+    footer #ct{
+        margin-top: 10px;
+        float: none;
+    }
+    footer #ct2{
+        margin-top: 20px;
+    }
+    footer #ct2 p{
+        font-size: 8pt;
+    }
+    footer #address{
+        margin-top: 10px;
+    }
+    
+
+
+
+
+
+}
