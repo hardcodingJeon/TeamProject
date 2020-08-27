@@ -5,7 +5,7 @@ a{text-decoration: none;}
 
 @font-face{
     font-family: "Swagger";
-    src:url("./font/Swagger.ttf");
+    src:url("../font/Swagger.ttf");
     /* css은 다른 파일 경로는 url() 사용 */
     }
 
@@ -384,7 +384,7 @@ a{text-decoration: none;}
  
 .img{
         position: relative;
-        background-image: url(./img/ggfd.jpg);                                                               
+        background-image: url(../img/ggfd.jpg);                                                               
         height: 22vh;
         background-size: cover;
     }
@@ -405,7 +405,7 @@ a{text-decoration: none;}
        width: 120px;
        left: 200px;
        top: 20px;
-       background-image: url(./img/hiclipart.com.png);                                                           
+       background-image: url(../img/hiclipart.com.png);                                                           
        z-index:3;
     }
 
@@ -424,7 +424,7 @@ a{text-decoration: none;}
 
     .img01{
             position: relative;
-            background-image: url(./img/sky.png);                                                               
+            background-image: url(../img/sky.png);                                                               
             height: 30vh;
             background-size: cover;
         }

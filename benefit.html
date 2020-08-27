@@ -7,14 +7,16 @@
     <title>차가 필요한 순간, 쏘카</title>
 
     <!-- 데스크탑 기준 스타일 -->
-    <link rel="stylesheet" href="../css/socar.css">
+    <link rel="stylesheet" href="./cssFolder/benefit.css">
 
 
 
     <!-- 모바일 기준 스타일 -->
-    <link rel="stylesheet" href="../css/mobile.css" media="(max-width:768px)">
+    <link rel="stylesheet" href="./cssFolder/benefit_mobile.css" media="(max-width:768px)">
 
-    <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- <script>
         function btn1() {
             document.getElementById('btn1').addEventListener("click", function () {
                 this.style.background = "#0BB8FF";
@@ -27,7 +29,7 @@
                 this.style.color = "white";
             })
         }
-    </script>
+    </script> -->
 
 </head>
 
@@ -54,6 +56,23 @@
                 <h2>쏘카의 다양한 혜택을 놓치지 마세요.</h2>
             </div>
         </header>
+
+        <div id="mySidenav" class="closeNav">
+
+            <a href="./service.html">쏘카 서비스</a>
+            <a href="./taeguen.html">이용 안내</a>
+            <a href="./Jonghoon.html">요금 안내</a>
+            <a href="./benefit.html">혜택 안내</a>
+          </div>
+      
+      
+          <nav class="header">
+            <a href="./main.html" id="socarLogo">SOCAR</a>
+            <div id="line-wrapper">
+              <div id="line-top" class="line init top-reverse"></div>
+              <div id="line-mid" class="line init mid-reverse"></div>
+            </div>
+          </nav>
     </div>
 
     <section class="container">
@@ -244,17 +263,17 @@
         <section class="section3">
             <ul id="sns">
                 <li>
-                    <a href="https://www.instagram.com/socarsharing/"><img src="../image/i-instagram.svg" alt="img"></a>
+                    <a href="https://www.instagram.com/socarsharing/"><img src="./image/i-instagram.svg" alt="img"></a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/socarsharing"><img src="../image/i-facebook.svg" alt="img"></a>
+                    <a href="https://www.facebook.com/socarsharing"><img src="./image/i-facebook.svg" alt="img"></a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/channel/UCsNtu0KJ3SJfs1zcQj8xEYQ"><img src="../image/i-youtube.svg"
+                    <a href="https://www.youtube.com/channel/UCsNtu0KJ3SJfs1zcQj8xEYQ"><img src="./image/i-youtube.svg"
                             alt="img"></a>
                 </li>
                 <li>
-                    <a href="http://blog.socar.kr/"><img src="../image/i-blog.svg" alt="img"></a>
+                    <a href="http://blog.socar.kr/"><img src="./image/i-blog.svg" alt="img"></a>
                 </li>
             </ul>
             <ul id="info">
@@ -294,7 +313,7 @@
 
 
     </footer>
-
+    <script src="./jsFolder/header.js"></script>
 </body>
 
 </html>

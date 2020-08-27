@@ -10,7 +10,7 @@ body{ line-height: 1; vertical-align: bottom;}
 
 @font-face{
     font-family: "Swagger";
-    src:url("./font/Swagger.ttf");
+    src:url("../font/Swagger.ttf");
     /* css은 다른 파일 경로는 url() 사용 */
     }
 
