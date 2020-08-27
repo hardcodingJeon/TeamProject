@@ -4,7 +4,7 @@ ul{margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;}
+    }
 a{text-decoration: none;
     color: rgba(0,0,0,1);
 
@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-weight: normal;
+    
 }
 
 
@@ -24,8 +24,7 @@ body{
     line-height: 1;
     font-family: "AvenirLTPro-Heavy", 'sdg-m', sans-serif;
     display: block;
-    
-    font-size: 13pt;
+    font-weight: bold;
     position: relative;
     line-height: 1;
     overflow: auto;
@@ -39,10 +38,11 @@ h2,h4{
     font-family: H2MKPB, sans-serif;
     font-weight: 550;
 }
-h5 {
-    font-size: 10pt;
+h5{
+    font-size: 9pt;
     line-height: 1.5;
     color: #aaa;
+    font-weight: bold;
 }
 
 section{
@@ -63,13 +63,12 @@ header div{
     text-align: center;
 }
 #head h1{
-    font-size: 18pt;
+    font-size: 16pt;
     line-height: 1.4;
     color: #fff;
 }
 #head h2{
-    font-size: 13pt;
-    margin-top: 5px;
+    font-size: 11pt;
     line-height: 1.5;
     letter-spacing: -0.02em;
 }
@@ -79,18 +78,17 @@ section #top{
     margin-bottom: 0px;
 }
 
-#imglogo{
-    width: 110px;
+#head #imglogo{
+    padding-left: 17px;
+    width: 100px;
     height: 70px;
-}
-#open{
-    text-align: right;
-
+    margin-top: -10px;
+    
 }
 
 .container h4{
    
-        font-size: 14pt;
+        font-size: 13pt;
         color: #374553;
         line-height: 1.5;
         letter-spacing: -0.025em;
@@ -101,7 +99,8 @@ section #top{
 
 .container #wrap section{
     overflow: hidden;
-    margin: 10px auto;
+    margin:  auto;
+    text-align: left;
     box-sizing: border-box;
     max-width: 800px;
 }
@@ -125,14 +124,15 @@ section #top{
     margin-bottom: 0px;
 }
 .container h2.title{
-    font-size: 18pt;
+    font-size: 17pt;
     color: #0BB8FF;
     line-height: 1.4;
+    font-weight: 500;
     letter-spacing: -0.025em;
 }
 .container #top ul li{
     color: #646F7C;;
-    font-size: 12pt;
+    font-size: 11pt;
     letter-spacing: -0.025em;
     line-height: 1.5;
     margin-bottom: 4px;
@@ -154,8 +154,8 @@ section #top{
     display: inline-block;
     background-color: #00469D;
 }
-.container.section1{
-    padding: 0 2px;
+section.section1{
+    padding: 0 22px;
     margin-top: 12px;
     margin-bottom: 80px;
 }
@@ -177,7 +177,7 @@ section #top{
     width: 100%;
     
 }
-button{
+/* button{
     appearance: button;
     text-rendering: auto;
     display: inline-block;
@@ -189,26 +189,23 @@ button{
     word-spacing: normal;
     align-items: flex-start;
     font: 400 13.3333px Arial;
-}
+} */
 
 .section1 ul button{
     cursor: pointer;
     font-family: "AvenirLTPro-Heavy", 'sdg-m', sans-serif;
     width: 50%;
-    height: 40px;
+    height: 38px;
     line-height: 42px;
     padding: 0;
     border: 1px solid #0bb8ff;
-    font-size: 13pt;
+    font-size: 11pt;
     box-sizing: border-box;
     text-align: center;
     color: #0bb8ff;
-    overflow: hidden;
     position: relative;
     background-color: #fff;
     float: left;
-    transition: all 250ms ease-in;
-    -webkit-transition: all 250ms ease-in;
 }
 .section1 ul button.active{
     color: #fff;
@@ -291,17 +288,17 @@ section.section2{
     background-color: #FF6F61;
 }
 #sec2 ul li a.guide::before{
-    background-color: #FFC400;
+    background-color: black;
 }
 #sec2 ul li a.pay::before{
-    background-color: #FFC400;
+    background-color: green;
 }
 #sec2 ul li a.check::before{
-    background-color: #FFC400;
+    background-color: orangered;
 }
 
 
-#sec2 ul li a.guide{
+/* #sec2 ul li a.guide{
     width: 32px;
     left: 16px;
     height: 20px;
@@ -311,7 +308,7 @@ section.section2{
     background-position: left center;
     background-size: 28px;
     background-color: transparent;
-}
+} */
 .mv{
     transition: transform .8s cubic-bezier(0.165, 0.840, 0.440, 1.000), opacity .5s ease;
     opacity: 1;
@@ -325,10 +322,10 @@ footer{
     position: relative;
     overflow: auto;
     width: 100%;
-    background-color: black;
-    padding: 40px 10px 10px;
+    margin-top: 50px;
+    background-color: #28323C;
+    padding: 20px 10px 10px;
     padding-bottom: 100px;
-    
     box-sizing: border-box;
 }
 
@@ -342,11 +339,21 @@ footer{
     width: 100%;
     margin-bottom: 16px;  
 }
+#sns img{
+    width: 28px;
+}
 #sns li{
     margin-right: 10px;
+    
     cursor: pointer;
     display: list-item;
     display: inline;
+}
+#sns li a{
+    font-size: 5px;
+}
+#info{
+    padding-bottom: 10px;
 }
 footer ul#info{
     position: static;
@@ -365,7 +372,7 @@ ul#info li{
 
 }
 #info li a{
-    font-size: 12pt;
+    font-size: 10pt;
     color: #C5C8CE;
 }
 footer #ct{
@@ -375,7 +382,6 @@ footer #ct{
     font-size: 10pt;
     line-height: 1.7;
     
-    margin-left: 20px;
     color: #646F7C;
 
 }
@@ -383,6 +389,16 @@ footer #ct2{
     font-size: 10pt;
     line-height: 1.7;
     color: #646F7C;
+}
+footer #ct2 p{
+    font-size: 9pt;
+}
+footer #ct li{
+    font-size: 9pt;
+}
+footer #ct address{
+    font-family: "AvenirLTPro-Heavy",sans-serif;
+    font-size: 9pt;
 }
 
 
